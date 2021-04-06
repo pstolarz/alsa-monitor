@@ -1,9 +1,9 @@
 # ALSA Monitor
 
-This tool monitors ALSA events for a given sound card. It's enhanced version of
-the standard Linux `alsactl-monitor` tool with more detailed output as shown
-below. The tool had been used to debug ALSA drivers and PulseAudio issues on
-the Linux platform.
+This tool monitors ALSA control events for installed sound card(s). It's enhanced
+version of the standard Linux `alsactl-monitor` tool with more detailed output
+as shown below. The tool had been used to debug ALSA drivers and PulseAudio issues
+on the Linux platform.
 
 `alsactl-monitor` output:
 ```
@@ -80,6 +80,16 @@ hw:0 event:
     type: 1 (BOOLEAN)
   bool(s):
     true
+```
+
+## Build
+`libasound` library (development version) is required to be installed first:
+```
+sudo apt-get install libasound2-dev
+```
+Then make the monitor:
+```
+make
 ```
 
 ## License
