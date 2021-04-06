@@ -1,0 +1,4 @@
+*.sw[a-p]
+alsa
+alsa-monitor
+tags
