@@ -19,7 +19,7 @@
 
 /*
  * ALSA Monitor (extended version)
- * Copyrigth (c) 2021 by Piotr Stolarz <pstolarz@o2.pl>
+ * Copyrigth (c) 2021 by Piotr Stolarz
  */
 
 #include <stddef.h>
