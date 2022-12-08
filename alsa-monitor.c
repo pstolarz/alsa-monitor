@@ -231,7 +231,7 @@ static void dump_hex_bytes(
     int i;
 
     for (i = 0; i < len;) {
-        if (!(i % 16)) printf(pref);
+        if (!(i % 16)) printf("%s", pref);
         else if (!(i % 8)) putc(' ', stdout);
         else putc(':', stdout);
 
@@ -247,7 +247,7 @@ static void dump_hex_ints(const unsigned *ints, size_t len, const char *pref)
     int i;
 
     for (i = 0; i < len;) {
-        if (!(i % 4)) printf(pref);
+        if (!(i % 4)) printf("%s", pref);
         else if (!(i % 2)) putc(' ', stdout);
         else putc(':', stdout);
 
